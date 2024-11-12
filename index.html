@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Example</title>
-  <!-- Bootstrap CSS CDN -->
-  <link
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
 </head>
+
 <body>
+    <h1>form to appply for jobs</h1>
+    <form action="post">
+        <div>
+            <label for="username" >Enter your username</label>
+            <input type="text" id="username "  name="username" placeholder="Enter your username" >
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+        </div>
+        <form>
+            <input type="checkbox" id="id1" name="Details1" value="Adhar">
+            <label for="vehicle1"> I have Adhar card</label><br>
+            <input type="checkbox" id="Ration card" name="Details2" value="Ration card">
+            <label for="vehicle2"> I have Ration card</label><br>
+            <input type="checkbox" id="vehicle3" name="Details3" value="passport">
+            <label for="vehicle3"> I have passport</label><br>
+        </form>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Website</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+
+    </form>
+    <h2>Enter personal details</h2>
+    <form action="post">
+        <label for="username">Enter your name</label>
+        <input type="text" id="username" name="name">
+        <br>
+        <br>
+        <label>Enter your number</label>
+        <input type="number" placeholder="only numbers">
+    </form>
+    <div>
+        <label for="comment">enter your comment</label>
+        <br>
+        <textarea id="comment" name="comment" rows="5" cols="50" placeholder="enter your comment here...."></textarea>
     </div>
-  </nav>
-
-  <!-- Main Content Section -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple example using Bootstrap to create a responsive web page with minimal custom CSS.</p>
-        <a href="#" class="btn btn-primary">Learn More</a>
-      </div>
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/500" alt="Placeholder Image" class="img-fluid">
-      </div>
+    <div>
+        <select name="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="India">India</option>
+            <option value="Ireland">Ireland</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="North Australia">North Australia</option>
+            <option value="Australia">Australia</option>
+            <option value="America">America</option>
+            <option value="Germany">Germany</option>
+        </select>
+        
     </div>
-  </div>
 
-  <!-- Bootstrap JS, Popper.js, and jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
