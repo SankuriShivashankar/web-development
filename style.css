@@ -1,0 +1,145 @@
+/* Style the block containing the heading */
+.heading-block {
+    width: 80%; /* Width of the block */
+    margin: auto; /* Center the block on the page */
+    padding: 5px; /* Padding inside the block */
+    background-color: #f0f0f0; /* Background color for the block */
+    border: 2px solid #333333; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text inside the block */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+.heading-block-small {
+    width: 30%; /* Width of the block */
+    margin: px auto; /* Center the block on the page */
+    padding: 5px; /* Padding inside the block */
+    background-color: #f0f0f0; /* Background color for the block */
+    border: 2px solid #333333; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Center the text inside the block */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+/* Style the first heading (h1) with animations */
+.heading-block h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #ff0000; /* Initial color for the animation */
+    margin: 0; /* Remove default margin from h1 */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    animation: slideIn 1s ease-out forwards, colorChange 3s linear infinite;
+}
+.heading-block-small {
+    width: 20%; /* Width of the block */
+    margin: px auto; /* Center the block on the page */
+    padding: 5px; /* Padding inside the block */
+    background-color: #f0f0f0; /* Background color for the block */
+    border: 2px solid #333333; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Center the text inside the block */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+.heading-block-small h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #ff0000; /* Initial color for the animation */
+    margin: 0; /* Remove default margin from h1 */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    animation: slideIn 2s ease-out 0.5s forwards, colorChange 3s linear infinite;
+    /* Adds a 0.5s delay to slideIn only */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Color change animation */
+@keyframes colorChange {
+    0% {
+        color: #ff0000;
+    }
+    50% {
+        color: #00ff00;
+    }
+    100% {
+        color: #0000ff;
+    }
+}
+.syllabus-entry {
+    margin-bottom: 10px; /* Add spacing below each syllabus entry */
+    padding: 5px; /* Optional: Add padding inside each entry */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add space between the text and the link */
+}
+/* Keep the first table positioned normally and add margin to space the tables */
+table {
+    border-collapse: collapse;
+    width: 350px; /* Set a fixed width for the table */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+    margin-top: 50px; /* Add margin-top to space the tables */
+}
+
+/* Table for syllabus links */
+table + table {
+    margin-top: -50px; /* Add space between the first and second table */
+}
+
+/* Styling for table headers and cells */
+th, td {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    background-color: rgb(43, 226, 89);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Specific styling for table headers */
+th {
+    border: 2px solid red;
+    background-color: #f8f8f8; /* Optional: Light background for contrast */
+}
+
+/* Specific styling for table data cells */
+td {
+    border: 2px solid black;
+    background-color: #ffffff; /* White background for clarity */
+}
+/* Positioning the top-right container */
+/* Centering the container in the page */
+/* Positioning the container for tables side by side */
+.top-right-container {
+    position: absolute; /* Enables manual positioning */
+    top: 50%; /* 50% from the top */
+    left: 50%; /* 50% from the left */
+    transform: translate(-50%, -50%); /* Adjust to center precisely */
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: row; /* Position tables side by side */
+    gap: 20px; /* Add spacing between tables */
+    align-items: flex-start; /* Align tables to the top */
+}
+
+/* Ensure table styles are consistent */
+table {
+    margin: 0; /* Remove automatic margin */
+    width: 350px; /* Optional: Set a fixed width for consistency */
+}
+
+
+
+
+
+
